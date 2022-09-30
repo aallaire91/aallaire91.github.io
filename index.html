@@ -19,7 +19,7 @@
               <p style="text-align:center">
                 <name>Alisa Allaire</name>
               </p>
-<p>I am a PhD student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a> advised by Professor <a href="http://www.cs.cmu.edu/~cga/">Chris Atkeson</a>. I'm interested in robot learning and I'm currently working on learning about physical processes in the real-world. 
+<p>I am a PhD student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a> advised by Professor <a href="http://www.cs.cmu.edu/~cga/">Chris Atkeson</a>. I'm interested in robot learning and confronting the challenges of applying learning methods to real-world systems. I'm currently working on learning about physical processes in the real world. 
               </p>
               
               <p style="text-align:center">
@@ -30,27 +30,60 @@
               </p>
             </td>
             
-
             
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-
-              </p>
+              <heading>Publications</heading>
+              <p>              </p>
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+        <table style=width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr onmouseout="robocomp_stop()" onmouseover="robocomp_start()">
+            <td style="padding:20px;width:28%;vertical-align:top">
+              <div class="one" >
+                <div class="two" id="robocomp_image" >
+                  <img src='images/robocomp_task0.gif' width="240"></div>
+                <img src='images/robocomp_task0.gif' width="240">
+              </div>
+              <script type="text/javascript">
+                function malle_start() {
+                  document.getElementById('robocomp_image').style.opacity = "1";
+                }
+
+                function malle_stop() {
+                  document.getElementById('robocomp_image').style.opacity = "0";
+                }
+                malle_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:72%;vertical-align:top">
+              <a href="https://sites.google.com/view/learning-strategies-icra2023/home">
+                <papertitle>Learning Exploration Strategies to Solve Real-World Marble Runs</papertitle>
+              </a>
+              <br>
+              <strong>Alisa Allaire</strong>,
+              <a href="http://www.cs.cmu.edu/~cga/">Christopher Atkeson</a>
+
+              <br>
+              <em>In Submission to ICRA </em>, 2023
+              <br>
+              <a href="https://sites.google.com/view/learning-strategies-icra2023/home">project page</a>
+              /
+              <a href="data/ICRA_2023_Allaire.pdf">paper</a>
+              <p>Tasks involving complex dynamic interactions remain challenging in robotics, because small variations in the environment can have a significant impact on task outcomes. For such tasks, learning a single deterministic policy that performs well across a variety of tasks and uncertain dynamics is difficult, so we focus on structuring exploration with multiple stochastic policies based on a mixture of experts (MoE) policy representation that can be efficiently adapted in the real world. The MoE policy is composed of stochastic sub-policies that allow exploration of multiple distinct regions of the action space (or strategies) and a high-level selection policy to guide exploration towards the most promising regions. We develop a robot system to evaluate our approach in a real-world physical problem solving domain. After training the MoE policy in simulation, online learning in the real world demonstrates efficient adaptation within just a few dozen attempts. Our results confirm that representing multiple strategies promotes efficient adaptation in new environments and strategies learned under different dynamics can still provide useful information about where to look for solutions.
+</p>
+            </td>
+          </tr>
+                    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+            <td style="padding:20px;width:28%;vertical-align:top">
               <div class="one">
                 <div class="two" id='malle_image'>
-                  <img src='images/MalleConv_after.jpg' width="160"></div>
-                <img src='images/MalleConv_before.jpg' width="160">
+                  <img src='images/pushbot.gif.' width="240"></div>
+                <img src='images/pushbot.gif' width="240">
               </div>
               <script type="text/javascript">
                 function malle_start() {
@@ -63,27 +96,20 @@
                 malle_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://yifanjiang.net/MalleConv.html">
-                <papertitle>Fast and High-quality Image Denoising via Malleable Convolutions</papertitle>
-              </a>
+            <td style="padding:20px;width:72%;vertical-align:top">
+                <papertitle>Learning to Navigate by Pushing</papertitle>
               <br>
-              <a href="https://yifanjiang.net/">Yifan Jiang</a>,
-              <a href="https://bartwronski.com/">Bartlomiej Wronski</a>, 
-							<a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://spark.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>
+              <a href="https://www.ri.cmu.edu/ri-people/cornelia-bauer/">Cornelia Bauer</a>,
+              <a href="https://www.ri.cmu.edu/ri-people/dominik-bauer/">Dominik Bauer</a>, 
+              <strong>Alisa Allaire</strong> ,
+              <a href="http://www.cs.cmu.edu/~cga/">Christopher Atkeson</a>, <br>
+              <a href="http://graphics.cs.cmu.edu/nsp/index.html">Nancy Pollard</a>
               <br>
-              <em>ECCV</em>, 2022
+              <em>ICRA</em>, 2022
               <br>
-              <a href="https://yifanjiang.net/MalleConv.html">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2201.00392">arXiv</a>
+              <a href="https://ieeexplore.ieee.org/document/9812194">paper</a>
               <p></p>
-              <p>
-              We denoise images efficiently by predicting spatially-varying kernels at low resolution and using a fast fused op to jointly upsample and apply these kernels at full resolution.
-              </p>
+              <p>In this work, we investigate a form of dynamic contact-rich locomotion in which a robot pushes off from obstacles in order to move through its environment. We present a reflex-based approach that switches between optimized hand-crafted reflex controllers and produces smooth and predictable motions. In contrast to previous work, our approach does not rely on periodic movements, complex models of robot and contact dynamics, or extensive hand tuning. We demonstrate the effectiveness of our approach and evaluate its performance compared to a standard model-free RL algorithm. We identify continuous clusters of similar behaviours, which allows us to successfully transfer different push-off motions directly from simulation to a physical robot without further retraining.</p>
             </td>
           </tr>
 </tbody></table>	
