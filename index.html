@@ -23,6 +23,7 @@
                 <name>Alisa Allaire</name>
               </p>
 <p>I am a PhD student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a> advised by Professor <a href="http://www.cs.cmu.edu/~cga/">Chris Atkeson</a>. I'm interested in robot learning and confronting the challenges of applying learning methods to real-world systems. I'm currently working on learning about physical processes in the real world. 
+
               </p>
               
               <p style="text-align:center">
@@ -48,6 +49,7 @@
         <table style=width="100%" align="center" border="0" cellpadding="20"><tbody>
           <tr onmouseout="robocomp_stop()" onmouseover="robocomp_start()">
             <td style="padding:20px;width:28%;vertical-align:top">
+            
               <div class="one" >
                 <div class="two" id="robocomp_image" >
                   <img src='images/decomposed_dynamics.png' width="240"></div>
@@ -67,7 +69,7 @@
             <td style="padding:20px;width:72%;vertical-align:top">
               <strong>Learning Temporally Decomposed Dynamics to Facilitate Planning through Complex Physical Interactions</strong>
 
-              <p>Consider a marble run task where a robot must configure objects in the scene so the ball reaches a specified goal state. Because actions can only be taken at the beginning of the tasks, reasoning about the correct placement of the objects requires imagining the outcome of complex interactions that unfold over an extended period of time. Learning an single-step dynamics model that can accurately make predictions over an entire trajectory is difficult due to the highly discontinuous dynamics and error propagation that results from sequencing predictions over 100's of steps. We hypothesize that learning temporally decomposed models of the dynamics will mitigate many of these challenges.
+              <p>Consider a marble run task where a robot must configure objects in the scene so the ball reaches a specified goal state. Because actions can only be taken at the beginning of the tasks, reasoning about the correct placement of the objects requires imagining the outcome of complex interactions that unfold over an extended period of time. Learning an single-step dynamics model that can accurately make predictions over an entire trajectory is difficult due to the highly discontinuous dynamics and error propagation that results from sequencing predictions over 100's of steps. I hypothesize that learning temporally decomposed models of the dynamics will mitigate many of these challenges. In this work, I leverage graph networks to encode the relationship between the ball and edges in the scene for the primitive dynamics models.
 </p>
             </td>
           </tr>
@@ -86,21 +88,12 @@
         <table style=width="100%" align="center" border="0" cellpadding="20"><tbody>
           <tr onmouseout="robocomp_stop()" onmouseover="robocomp_start()">
             <td style="padding:20px;width:28%;vertical-align:top">
-              <div class="one" >
-                <div class="two" id="robocomp_image" >
-                  <img src='images/robocomp_task0.gif' width="240"></div>
-                <img src='images/robocomp_task0.gif' width="240">
-              </div>
-              <script type="text/javascript">
-                function malle_start() {
-                  document.getElementById('robocomp_image').style.opacity = "1";
-                }
+              <div class="crop" >
+                <div class="one_crop" id="robocomp_image" >
+                  <img src='images/robocomp_task0.gif' width=360px ></div>
 
-                function malle_stop() {
-                  document.getElementById('robocomp_image').style.opacity = "0";
-                }
-                malle_stop()
-              </script>
+              </div>
+
             </td>
             <td style="padding:20px;width:72%;vertical-align:top">
               <a href="https://sites.google.com/view/learning-strategies-icra2023/home">
@@ -124,7 +117,7 @@
             <td style="padding:20px;width:28%;vertical-align:top">
               <div class="one">
                 <div class="two" id='malle_image'>
-                  <img src='images/pushbot.gif.' width="240"></div>
+                  <img src='images/pushbot.gif' width="240"></div>
                 <img src='images/pushbot.gif' width="240">
               </div>
               <script type="text/javascript">
