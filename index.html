@@ -36,6 +36,45 @@
             
           </tr>
         </tbody></table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Current Projects</heading>
+              <p>              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style=width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr onmouseout="robocomp_stop()" onmouseover="robocomp_start()">
+            <td style="padding:20px;width:28%;vertical-align:top">
+              <div class="one" >
+                <div class="two" id="robocomp_image" >
+                  <img src='images/decomposed_dynamics.png' width="240"></div>
+                <img src='images/decomposed_dynamics.png' width="240">
+              </div>
+              <script type="text/javascript">
+                function malle_start() {
+                  document.getElementById('robocomp_image').style.opacity = "1";
+                }
+
+                function malle_stop() {
+                  document.getElementById('robocomp_image').style.opacity = "0";
+                }
+                malle_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:72%;vertical-align:top">
+              <strong>Learning Temporally Decomposed Dynamics to Facilitate Planning through Complex Physical Interactions</strong>
+
+              <p>Consider a marble run task where a robot must configure objects in the scene so the ball reaches a specified goal state. Because actions can only be taken at the beginning of the tasks, reasoning about the correct placement of the objects requires imagining the outcome of complex interactions that unfold over an extended period of time. Learning an single-step dynamics model that can accurately make predictions over an entire trajectory is difficult due to the highly discontinuous dynamics and error propagation that results from sequencing predictions over 100's of steps. We hypothesize that learning temporally decomposed models of the dynamics will mitigate many of these challenges.
+</p>
+            </td>
+          </tr>
+
+</tbody></table>	
+
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
